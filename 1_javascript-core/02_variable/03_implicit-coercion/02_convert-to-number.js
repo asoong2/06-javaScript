@@ -23,17 +23,21 @@ console.log(`isNaN(NaN) : ${isNaN(NaN)}`);
 
 // 3. + 단항 연산자
 // 피연산자가 숫자 타입의 값이 아니면 숫자 타입의 값으로 암묵적 타입 변환 수행
-console.log(+'');
-console.log(+'1');
-console.log(+'javaScript');
-console.log(+true);
-console.log(+false);
-console.log(+null);
-console.log(+undefined);
+console.log(+'');                   // 0
+console.log(+'1');                  // 1
+console.log(+'javaScript');         // NaN
+console.log(+true);                 // 1
+console.log(+false);                // 0
+console.log(+null);                 // 0
+console.log(+undefined);            // NaN
 // console.log(+Symbol()); // TypeError: Cannot convert a Symbol value to a number
-console.log(+{});
-console.log(+[]);
-console.log(+function(){});
+console.log(+{});                   // NaN
+console.log(+[]);                   // 0
+console.log(+function(){});         // NaN
+
+// 빈 문자열, 빈 배열, null, false는 0으로 변환
+// true는 1로 변환
+// 객체와 undefined, 함수는 변환 불가여서 NaN이 반환
 
 
 

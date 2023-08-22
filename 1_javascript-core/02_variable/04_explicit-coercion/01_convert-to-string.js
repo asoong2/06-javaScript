@@ -13,3 +13,5 @@ console.log((NaN).toString());
 console.log((Infinity).toString());
 console.log((true).toString());
 console.log((false).toString());
+
+// 3. 문자열 연결 연산자 이용 - 암묵적 변환 챕터에서 확인함

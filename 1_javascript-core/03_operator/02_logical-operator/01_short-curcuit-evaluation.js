@@ -26,4 +26,12 @@ num % 2 == 0 || console.log('홀수');
 // 객체를 가리키기를 기대하는 변수가 null 또는 undefined가 아닌지 확인하고
 // 프로퍼티를 참조할 때 단축 평가를 유용하게 사용할 수 있다.
 var obj = null;
-var val = obj.value;
+
+// TypeError: Cannot read properties of null (reading 'value')
+// var val = obj.value;
+
+// obj가 Falsy(null, undefined) 값이면 좌항만 실행하여 val -> null
+// obj가 Truthy 값이면 val -> obj.value
+var val = obj && obj.value;
+
+
