@@ -2,10 +2,10 @@ const calculator = {
     a : 10,
     b : 20,
     sum(a,b) {
-        return `합 : ${this.a+this.b};`
+        return `합 : ${this.a + this.b};`
     },
     multi(a,b){
-        return `곱 : ${this.a*this.b};`
+        return `곱 : ${this.a * this.b};`
     }
 };
 console.log(calculator.sum());

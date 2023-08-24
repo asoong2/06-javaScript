@@ -1,11 +1,11 @@
 // 1. min, max function
 function min(num1, num2) {
-    minnum = (num1>num2)? num2 : num1;
+    var minnum = (num1>num2)? num2 : num1;
     return `최소값 : ${minnum}`;
 }
 
 function max(num1, num2) {
-    maxnum = (num1>num2)? num1 : num2;
+    var maxnum = (num1>num2)? num1 : num2;
     return `최대값 : ${maxnum}`
 }
 
@@ -17,7 +17,7 @@ console.log(`2번 -----------------------------------------------------`);
 
 // 2. pow function
 function pow(x, n) {
-    result = 1;
+    var result = 1;
     if(n >= 1) {
         for(i = 0; i < n; i++ ) {
             result *=  x

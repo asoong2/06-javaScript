@@ -8,7 +8,6 @@ if(null) console.log("if(null)");                       //false
 if(0) console.log("if(0)");                             //false
 if(1) console.log("if(1)");                             //true
 if(NaN) console.log("if(NaN)");                         //false
-if(null) console.log("if(null)");                       //false
 if('') console.log("if('')");                           //false
 if('javaScript') console.log("if(JavaScript)");         //true
 
